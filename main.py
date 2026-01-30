@@ -62,28 +62,30 @@ de triângulo será formado:
 [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
 """
 
-import random
+# import random
+#
+# computador = random.randint(1, 3)
+# usuario = int(input("Digite 1 para Pedra, 2 para Papel e 3 para Tesoura\n"))
+#
+# if computador == 1:
+#     resultado = "Pedra"
+# elif computador == 2:
+#     resultado = "Papel"
+# elif computador == 3:
+#     resultado = "Tesoura"
+#
+# if usuario in [1, 2, 3]:
+#     if usuario == computador:
+#         print("Empate")
+#     elif (usuario == 1 and computador == 2) or (usuario == 2 and computador == 3) or (usuario == 3 and computador == 1):
+#         print(f"O computador escolheu: {resultado}")
+#         print("Computador Vence!")
+#     else:
+#         print(f"O computador escolheu: {resultado}")
+#         print("Usuário Vence!")
+# else:
+#     print("Digite um valor válido")
 
-computador = random.randint(1, 3)
-usuario = int(input("Digite 1 para Pedra, 2 para Papel e 3 para Tesoura\n"))
 
-if computador == 1:
-    resultado = "Pedra"
-elif computador == 2:
-    resultado = "Papel"
-elif computador == 3:
-    resultado = "Tesoura"
-
-if usuario in [1, 2, 3]:
-    if usuario == computador:
-        print("Empate")
-    elif (usuario == 1 and computador == 2) or (usuario == 2 and computador == 3) or (usuario == 3 and computador == 1):
-        print(f"O computador escolheu: {resultado}")
-        print("Computador Vence!")
-    else:
-        print(f"O computador escolheu: {resultado}")
-        print("Usuário Vence!")
-else:
-    print("Digite um valor válido")
 
 
