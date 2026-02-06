@@ -94,3 +94,33 @@ def tabuada(sequencia):
 
 # tabuada(2)
 
+# Ano Bissexto
+
+def ano_bissexto(ano):
+    if ano % 400 == 0:
+        return "Bissexto"
+    if ano % 100 == 0:
+        return "Não é um ano bissexto"
+    if ano % 4 == 0:
+        return "Bissexto"
+
+    return "Não é um ano bissexto"
+
+
+def numero_primo(num):
+    for i in range(2, num - 1):
+        if num % i == 0:
+            return "Não é primo"
+    return "É primo"
+
+# numero_primo(11)
+
+def fatorial(valor):
+    armario = 1
+    while valor > 1:
+        armario *= valor
+        valor -= 1
+
+    return armario
+
+# fatorial(10)
