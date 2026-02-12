@@ -11,3 +11,4 @@ def teste_pares():
 
 def teste_valor_max_min():
     assert maior_menor_numero() == "7/1"
+
