@@ -1,4 +1,4 @@
-from ex1 import *
+from Exercises.ex1 import *
 
 def teste_soma():
     assert soma(2, 3) == 5

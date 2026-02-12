@@ -1,4 +1,4 @@
-from ex3 import *
+from Exercises.ex3 import *
 
 def teste_ola_mundo():
     assert oi_mundo("Maria") == "Olá Lorena!"

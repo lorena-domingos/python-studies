@@ -1,4 +1,4 @@
-from ex2 import *
+from Exercises.ex2 import *
 
 def testando_triangulo():
     assert tipo_triangulo(2, 3, 4) == "Escaleno"
