@@ -1,3 +1,5 @@
+import re
+
 # Palindrome
 
 def palindrome():
@@ -47,3 +49,38 @@ def short_words(valor):
     return palavras_curtas
 
 # short_words(2)
+
+# concatenar array
+
+def concatenar_array():
+    arr = [1, 2, 3]
+    arr_2 = [4, 5, 6]
+    arr_final = [*arr, *arr_2]
+    # for i in arr:
+    #     arr_final.append(i)
+    #
+    # for j in arr_2:
+    #     arr_final.append(j)
+
+    return arr_final
+
+# concatenar_array()
+
+def intersecao_arr():
+    a = ["arroz", "batata", "naruto"]
+    b = ["arroz", "sasuke", "naruto"]
+    c = []
+    for i in a:
+        if i in b:
+            c.append(i)
+    print(c)
+
+# intersecao_arr()
+
+def remover_vogais():
+    frase = "É 4 da manhã e cá estou eu descobrindo como usar regex no Python"
+    nova_frase = re.sub(r'[aeiouáéíóúãõ]', '', frase, flags=re.IGNORECASE)
+    print(nova_frase)
+
+remover_vogais()
+

@@ -11,3 +11,6 @@ def test_words_count():
 
 def test_short_words():
     assert short_words(2) == ['BA', 'RJ']
+
+def test_concatenar():
+    assert concatenar_array() == [1, 2, 3, 4, 5, 6]
