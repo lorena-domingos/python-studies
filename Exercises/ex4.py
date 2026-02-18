@@ -82,5 +82,60 @@ def remover_vogais():
     nova_frase = re.sub(r'[aeiouáéíóúãõ]', '', frase, flags=re.IGNORECASE)
     print(nova_frase)
 
-remover_vogais()
+# remover_vogais()
+
+def arr_dict():
+    dicionario = [
+        {"nome": "Ana", "idade": 25},
+        {"nome": "João", "idade": 32}
+    ]
+
+    arr = []
+
+    for i in dicionario:
+        arr.append(i["nome"])
+
+    print(arr)
+
+# arr_dict()
+
+def arr_age():
+    dicionario = [
+        {"nome": "Ana", "idade": 25},
+        {"nome": "João", "idade": 32}
+    ]
+
+    age_1 = dicionario[0]["idade"]
+    age_2 = dicionario[1]["idade"]
+    total = age_2 - age_1
+
+    print(total)
+
+# arr_age()
+
+
+def letra_inicial():
+    nomes = ["João Pedro", "Maria"]
+    lista_nova = []
+    iniciais = []
+    palavra = []
+
+    for i in nomes:
+        lista_nova.append(i.split())
+
+    nome_1 = [n[0] for n in lista_nova[0]]
+    nome_2 = [n[0] for n in lista_nova[1]]
+
+    # Era só isso...
+    for n in lista_nova:
+        palavra.append("".join([p[0] for p in n]))
+
+    iniciais.append("".join(nome_1))
+    iniciais.append("".join(nome_2))
+
+    print(palavra)
+    # print(lista_nova)
+    # print(iniciais)
+
+letra_inicial()
 
